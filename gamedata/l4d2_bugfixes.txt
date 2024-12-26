@@ -1,0 +1,91 @@
+/* created by V10 aka maldersoft, Accelerator & $atanic $pirit */
+"Games"
+{
+	"left4dead2"
+	{	
+		"Offsets"
+		{
+			"WitchAttackCharaster"
+			{
+				"linux"		"14"
+				"windows"	"14"
+			}
+			
+			"SurvivorCounters"
+			{
+				"linux"		"1048"
+				"windows"	"1056"
+			}
+						
+			/* Offset into CDirectorMusicBanks::OnRoundStart */
+			"TheDirector"
+			{
+				"windows"	"12"
+			}			
+		}
+		"Signatures"
+		{
+			"CDirectorMusicBanks::OnRoundStart"
+			{
+				"library"    "server"
+				"windows"   "\x2A\x2A\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x0F"
+				/* ? ? ? ? ? ? 56 57 8B ? 8B ? ? ? ? ? E8 ? ? ? ? 84 ? 0F */
+			}
+			"TheDirector"
+			{
+				"library"    "server"
+				"linux"        "@TheDirector"
+			}
+			"CCharge::HandleCustomCollision"
+			{
+				"library"    "server"
+				"linux"        "@_ZN7CCharge21HandleCustomCollisionEP11CBaseEntityRK6VectorS4_P10CGameTraceP9CMoveData"
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x8B\x2A\x2A\x53\x8B\x2A\x89\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x56\x8B\x2A\x2A\x57"
+				/* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 8B ? ? 53 8B ? 89 ? ? 8B ? ? ? ? ? 56 8B ? ? 57 */
+			}
+			"CCharge::HandleCustomCollision_code"
+			{
+				"library"    "server"
+				"linux"        "\x2A\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\x2A\x2A\x2A\xC6\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\x2A\x2A\x2A\xA1"
+				/* ? ? ? ? ? ? F3 0F ? ? ? ? ? ? C6 ? ? ? ? ? ? ? F3 0F ? ? ? ? ? ? F3 0F ? ? ? ? ? ? F3 0F ? ? ? ? ? ? F3 0F ? ? ? ? ? ? A1 */
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\xC6\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x2A\xF3\x0F\x2A\x2A\x0F"
+				/* ? ? ? ? ? ? C6 ? ? 8B ? ? ? ? ? F3 0F ? ? ? F3 0F ? ? 0F */
+			}
+			"WitchAttack::WitchAttack"
+			{
+				"library"    "server"
+				"linux"        "@_ZN11WitchAttackC1EP11CBaseEntity"
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\x33\x2A\x33\x2A\x89\x2A\x2A\x33\x2A\x89\x2A\x2A\x57\x33\x2A\x89\x2A\x2A\x33\x2A\x89\x2A\x2A\x89\x2A\x2A\x89\x2A\x2A\x89\x2A\x2A\x89\x2A\x2A\x89\x2A\x2A\x66\x2A\x2A\x2A\x89\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\x53\x8D\x2A\x2A\xC7\x2A\x2A\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x0F\x57\x2A\x8D\x2A\x2A\x2A\x2A\x2A\x88"
+				/* ? ? ? ? ? ? ? C7 ? ? ? ? ? ? C7 ? ? ? ? ? ? 33 ? 33 ? 89 ? ? 33 ? 89 ? ? 57 33 ? 89 ? ? 33 ? 89 ? ? 89 ? ? 89 ? ? 89 ? ? 89 ? ? 89 ? ? 66 ? ? ? 89 ? ? C7 ? ? ? ? ? C7 ? ? ? ? ? ? 53 8D ? ? C7 ? ? ? ? ? ? E8 ? ? ? ? 0F 57 ? 8D ? ? ? ? ? 88 */
+			}
+			"CTerrorGameRules::CalculateSurvivalMultiplier"
+			{
+				"library"    "server"
+				"linux"        "@_ZN16CTerrorGameRules27CalculateSurvivalMultiplierEb"
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\x80\x2A\x2A\x2A\x53\x56\x8B\x2A\x0F\x84"
+				/* ? ? ? ? ? ? 80 ? ? ? 53 56 8B ? 0F 84 */
+			}
+			"CDirector::AreTeamsFlipped"
+			{
+				"library"    "server"
+				"linux"        "@_ZNK9CDirector15AreTeamsFlippedEv"
+				"windows"   "\x57\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x75\x2A\xF7"
+				/* 57 8B ? E8 ? ? ? ? 84 ? 75 ? F7 */
+			}
+			"CDirector::AllowWitchesInCheckpoints"
+			{
+				"library"    "server"
+				"linux"        "@_ZNK9CDirector25AllowWitchesInCheckpointsEv"
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x84\x2A\x75\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x75\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x75\x2A\x33"
+				/* ? ? ? ? ? ? ? ? 84 ? 75 ? E8 ? ? ? ? 84 ? 75 ? 8B ? ? ? ? ? E8 ? ? ? ? 84 ? 75 ? 33 */
+			}
+			"WitchAttack::GetVictim"
+			{
+				"library"    "server"
+				"linux"        "@_ZNK11WitchAttack9GetVictimEv"
+				"windows"    "\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x83\x2A\x2A\x74\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x81\x2A\x2A\x2A\x2A\x2A\x03\x2A\x8D\x2A\x2A\x2A\x85\x2A\x74\x2A\xC1\x2A\x2A\x39\x2A\x2A\x75\x2A\x8B\x2A\xC3\x33\x2A\xC3\x50"
+				/* ? ? ? ? ? ? ? ? 8B ? ? 83 ? ? 74 ? 8B ? ? ? ? ? 8B ? 81 ? ? ? ? ? 03 ? 8D ? ? ? 85 ? 74 ? C1 ? ? 39 ? ? 75 ? 8B ? C3 33 ? C3 50 */
+			} 
+		}
+	}
+}
